@@ -6,6 +6,8 @@ import Logo from './Logo'
 import Loader from 'react-loaders'
 import './index.scss'
 
+import Layout from '../Layout'
+
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -14,13 +16,14 @@ const Home = () => {
 
 
     useEffect(() => {
-        return setTimeout(() => {
+        setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 4000)
     }, [])
 
     return (
-        <>
+        <>  
+            <Layout />
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>
@@ -48,7 +51,7 @@ const Home = () => {
                 <Logo />
             </div>
 
-<Loader type="pacman" />
+            <Loader type="pacman" />
         </>
 
     );

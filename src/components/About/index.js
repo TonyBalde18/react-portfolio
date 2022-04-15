@@ -12,18 +12,21 @@ import {
     faReact,
 } from '@fortawesome/free-brands-svg-icons'
 
+import Layout from '../Layout';
+import Sidebar from '../Sidebar';
 const About = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
-        return setTimeout(() => {
+        setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
 
     return (
         <>
+            <Layout />
             <div className="container about-page">
                 <div className="text-zone">
                     <h1>

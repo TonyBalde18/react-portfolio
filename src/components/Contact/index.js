@@ -6,12 +6,14 @@ import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
+import Layout from '../Layout'
+
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const form = useRef()
 
     useEffect(() => {
-        return setTimeout(() => {
+        setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
@@ -23,7 +25,7 @@ const Contact = () => {
             .sendForm(
                 'gmail',
                 'template_47i37lb',
-                form.current,
+                 form.current,
                 'vVyn7prmjvCq2HV0dLrsz'
             )
             .then(
@@ -39,6 +41,7 @@ const Contact = () => {
 
     return (
         <>
+            <Layout />
             <div className="container contact-page">
                 <div className="text-zone">
                     <h1>
@@ -111,6 +114,6 @@ const Contact = () => {
             <Loader type="pacman" />
         </>
     )
+    
 }
-
-export default Contact
+export default Contact;

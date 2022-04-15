@@ -9,6 +9,7 @@ import {
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -19,6 +20,7 @@ const Sidebar = () => {
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
       <nav>
+        
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -32,7 +34,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-      </nav>
+      </nav> 
       <ul>
         <li>
           <a
