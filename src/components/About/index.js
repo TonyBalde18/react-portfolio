@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import {
-    faAngular,
+    faPython,
     faCss3,
-    faGitAlt,
+    faJava,
     faHtml5,
     faJsSquare,
     faReact,
@@ -38,24 +38,22 @@ const About = () => {
                     </h1>
 
                     <p>
-                        I'm very ambitious front-end developer looking for a role in
-                        established IT company with the opportunity to work with the latest
-                        technologies on challenging and diverse projects.
+                        I'm still an CS student and enthusiast, hoping that in the future
+                        I will get a role in a established IT company with the opportunity to work 
+                        with the latest technologies on challenging and diverse projects.
                     </p>
                     <p>
-                        I'm quietly confident, naturally curious, and perpetually working on
-                        improving my chops one design problem at a time.
+                        I'm quietly confident, naturally curious, I see myself as a person who can always
+                        solve a problem (it might take some time but I don't give up).
                     </p>
                     <p>
-                        If I need to define myself in one sentence that would be a family
-                        person, father of a beautiful daughter, a sports fanatic,
-                        photography enthusiast, and tech-obsessed!!!
+                        Outside of technology world a big fan of football and music.
                     </p>
                 </div>
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
-                            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                            <FontAwesomeIcon icon={faPython} color="#104E8B" />
                         </div>
                         <div className="face2">
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -70,7 +68,7 @@ const About = () => {
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                         </div>
                         <div className="face6">
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                            <FontAwesomeIcon icon={faJava} color="#EC4D28" />
                         </div>
                     </div>
                 </div>
